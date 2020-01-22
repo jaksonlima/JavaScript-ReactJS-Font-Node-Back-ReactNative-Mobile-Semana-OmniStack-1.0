@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const router = require('./routes');
 
 const app = express();
 
@@ -9,14 +10,7 @@ mongoose.connect('mongodb+srv://jaksonsneider:jakson@9987@omnistack-loadn.mongod
 });
 
 app.use(express.json());
-
-app.get('/', (request, response) => {
-    return response.json({
-        menssage: 'Hello Word',
-        date: new Date(),
-    })
-});
-
+app.use(router);
 app.listen(3333);
 
 // request.query
