@@ -4,9 +4,9 @@ const router = require('./routes');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://jaksonsneider:jakson@9987@omnistack-loadn.mongodb.net/omni10?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://jaksonsneider:Jakson@9987@omnistack-loadn.mongodb.net/Semana10?retryWrites=true&w=majority', {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
 });
 
 app.use(express.json());
