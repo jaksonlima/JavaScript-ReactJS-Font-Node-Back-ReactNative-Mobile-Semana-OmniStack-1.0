@@ -1,8 +1,30 @@
-# Semana-OmniStack-1.0-Curso-React-Node.js-Back-Font 
-# Iniciador projeto Node.js instalando o YARN.
-# Comando inicia projeto "yarn init -y"
-Yarn add express rest api.
+# Iniciador Projeto Node.js.
+yarn init -y
 
-Yarn add nodemon -D start scrip projeto.
+yarn add express
 
-Yarn add mongoose Database.
+yarn add nodemon -D start scrip projeto
+
+yarn add mongoose
+
+# Iniciador projeto Web ReactJS
+yarn create react-app ./nomde-pasta
+
+yarn add axios
+
+yarn add redux reac-redux redux-saga
+
+yarn install --save styled-components
+
+# Extensões
+Dracula Official
+
+EditorConfig for VS Code
+
+Material Icon Theme
+
+Prettier - Code formatter
+
+vscode-style-components
+
+Watch in Chrome
