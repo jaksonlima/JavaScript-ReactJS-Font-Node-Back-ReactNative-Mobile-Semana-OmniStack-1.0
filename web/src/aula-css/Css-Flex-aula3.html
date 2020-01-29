@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+      div {
+        border: solid 5px dodgerblue;
+        font-size: 40px;
+      }
+      .flex-container div {
+        box-sizing: border-box;
+      }
+      .flex-container {
+        display: flex;
+        height: 300px;
+        width: 600px;
+        flex-direction: column;
+      }
+      .flex-container div {
+        flex-basis: 100px;
+        width: 200px; /*vai perder pro flex-basis*/
+      }
+      .flex-container div:nth-child(4) {
+        flex: 3 6 100px;
+      }
+      .flex-container {
+        width: 300px;
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
+    <style>
+      div {
+        border: solid 5px dodgerblue;
+        font-size: 40px;
+      }
+      .flex-conteiner div {
+        box-sizing: border-box;
+      }
+      .flex-conteiner {
+        display: flex;
+        height: 300px;
+        width: 600px;
+      }
+      .flex-conteiner div:nth-child(3) {
+        background-color: red;
+        order: 1;
+        order: -1;
+        align-self: flex-end;
+        align-self: flex-start;
+        align-self: center;
+        align-self: stretch;
+      }
+      .flex-conteiner div {
+        width: 100px;
+        flex-grow: 1;
+      }
+      .flex-conteiner div:nth-child(1) {
+        width: 100px;
+        flex-grow: 2;
+        flex-grow: 1;
+      }
+      .flex-conteiner div:nth-child(1) {
+        flex-shrink: 2;
+      }
+      .flex-conteiner {
+        width: 300px;
+        flex-shrink: 1;
+      }
+      .flex-conteiner div:nth-child(1) {
+        flex-shrink: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-conteiner">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>
